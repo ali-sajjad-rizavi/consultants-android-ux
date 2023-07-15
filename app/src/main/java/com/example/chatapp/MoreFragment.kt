@@ -1,10 +1,12 @@
 package com.example.chatapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.chatapp.databinding.FragmentMoreBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +23,8 @@ class MoreFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var binding: FragmentMoreBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -32,9 +36,29 @@ class MoreFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        binding = FragmentMoreBinding.inflate(inflater, container, false)
+        return binding.root
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_more, container, false)
+        // return inflater.inflate(R.layout.fragment_more, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Now, I'm setting the on click listeners for all the sample consultant images. Later,
+        // when the app will be connected with a database, these images will be refactored into
+        // recycler view with single item layout for an image, and the list of consultant will be
+        // returned from the database. Then we'll no longer set multiple listeners for each image.
+
+        binding.consultantImageView1.setOnClickListener { navigateToAskForAdvisorActivity() }
+        binding.consultantImageView2.setOnClickListener { navigateToAskForAdvisorActivity() }
+        binding.consultantImageView3.setOnClickListener { navigateToAskForAdvisorActivity() }
+    }
+
+    private fun navigateToAskForAdvisorActivity() {
+        val intent = Intent(requireActivity(), AskForAdvisorActivity::class.java)
+        startActivity(intent)
     }
 
     companion object {

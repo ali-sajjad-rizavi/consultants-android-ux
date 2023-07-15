@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskForAdvisorActivity"
+    android:background="#20A090"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/askForAdvisorBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_arrow_back_gray"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/writing_to_your_consultant"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        >
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:gravity="top|start"
+            android:background="#e5e5e5"
+            android:autofillHints="message"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/white_button_background"
+            android:text="@string/ask_for_your_advisor"
+            android:fontFamily="@font/inter"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

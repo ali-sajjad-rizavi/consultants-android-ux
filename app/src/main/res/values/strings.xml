@@ -25,6 +25,8 @@
     <string name="title_activity_signup_userdetail">SignupUserdetailActivity</string>
     <string name="name">Name</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="ask_for_your_advisor">Ask for your advisor</string>
+    <string name="writing_to_your_consultant">Writing to your consultant</string>
 
     <string-array name="consultant_options">
         <item>Choose the type of consultant</item>
