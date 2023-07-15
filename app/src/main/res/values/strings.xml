@@ -27,6 +27,12 @@
     <string name="confirm_password">Confirm password</string>
     <string name="ask_for_your_advisor">Ask for your advisor</string>
     <string name="writing_to_your_consultant">Writing to your consultant</string>
+    <string name="sample_username_umar_manzoor">عمر منصور</string>
+    <string name="sample_username">\@USERNAME</string>
+    <string name="full_name">Full name</string>
+    <string name="sample_umar_manzoor_email">omar@gmail.com</string>
+    <string name="view_all"><b>View all</b></string>
+    <string name="_255">255+</string>
 
     <string-array name="consultant_options">
         <item>Choose the type of consultant</item>
