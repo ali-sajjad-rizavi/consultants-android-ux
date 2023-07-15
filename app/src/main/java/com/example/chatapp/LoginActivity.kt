@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.backButton.setOnClickListener {
+        binding.activityLoginBackButton.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
 
