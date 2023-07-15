@@ -13,9 +13,13 @@
         android:theme="@style/Theme.ChatApp"
         tools:targetApi="31">
         <activity
-            android:name=".ProviderProfileActivity"
+            android:name=".PaymentMethodActivity"
             android:exported="false"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ProviderProfileActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".AskForAdvisorActivity"
             android:exported="false"
