@@ -3,4 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoreFragment"/>
+    tools:context=".MoreFragment"
+    android:background="#EBEBEB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MoreFragment"
+        android:background="#EBEBEB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Consultant"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter"
+                android:layout_marginEnd="31dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:src="@drawable/car_consultant"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports consultant"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="31dp"
+                android:fontFamily="@font/inter"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:src="@drawable/sport_consultant"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT Consultant"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter"
+                android:layout_marginEnd="31dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:src="@drawable/it_consultant"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

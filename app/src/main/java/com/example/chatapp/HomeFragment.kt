@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.chatapp.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,10 +46,17 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // binding.moreTextview.setOnClickListener {
-        //     val navController = findNavController()
-        //     navController.navigate(R.id.moreFragment)
-        // }
+         binding.moreTextview.setOnClickListener {
+             activity?.supportFragmentManager
+                 ?.beginTransaction()
+                 ?.replace(R.id.fragmentContainerView, MoreFragment())
+                 ?.setReorderingAllowed(true)
+                 ?.commit()
+            //             (activity as YourActivityLauncherFragment)
+            //                 .supportFragmentManager.beginTransaction()
+            //                 .replace(R.id.yourFragmentContainer, YourFragmentName()).setReorderingAllowed(true)
+            //                 .commit()
+         }
     }
 
     companion object {

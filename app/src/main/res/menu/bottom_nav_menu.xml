@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Item" android:icon="@drawable/ic_videochat"/>
-    <item android:title="Item" android:icon="@drawable/ic_message"/>
-    <item android:id="@+id/homeFragment" android:title="History" android:icon="@drawable/ic_history" />
-    <item android:title="Item" android:icon="@drawable/ic_person" />
+    <item android:title="Video Call" android:icon="@drawable/ic_videochat"/>
+    <item android:title="Chat" android:icon="@drawable/ic_message"/>
+    <item android:title="History" android:icon="@drawable/ic_history" />
+    <item android:title="Profile" android:icon="@drawable/ic_person" />
 </menu>
