@@ -37,6 +37,7 @@
     <string name="choose_payment_method"><b>Choose payment method</b></string>
     <string name="add_payment_method">Add payment method</string>
     <string name="active_now">Active now</string>
+    <string name="write_your_message"><font size="12">Write your message</font></string>
 
     <string-array name="consultant_options">
         <item>Choose the type of consultant</item>

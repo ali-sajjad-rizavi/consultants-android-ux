@@ -113,7 +113,7 @@
     <!-- Bottom bar where we send message, attach files etc. -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         android:background="@color/white">
 
@@ -127,9 +127,15 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:layout_marginStart="10dp"/>
+            android:hint="@string/write_your_message"
+            android:background="@drawable/background_chat_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
 
         <ImageButton
             android:layout_width="wrap_content"
