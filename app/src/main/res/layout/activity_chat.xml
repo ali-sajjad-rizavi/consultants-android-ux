@@ -30,6 +30,14 @@
             android:layout_marginStart="20dp"
             android:layout_gravity="center">
 
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_online"
+                android:layout_alignBottom="@id/chatScreenProfileCardView"
+                android:layout_alignEnd="@id/chatScreenProfileCardView"
+                android:layout_margin="3dp" />
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/chatScreenProfileCardView"
                 android:layout_width="wrap_content"
@@ -45,14 +53,6 @@
                     android:layout_height="50dp"
                     android:src="@drawable/sample_doctor_image" />
             </androidx.cardview.widget.CardView>
-
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:src="@drawable/ic_online"
-                android:layout_alignBottom="@id/chatScreenProfileCardView"
-                android:layout_alignEnd="@id/chatScreenProfileCardView"
-                android:layout_margin="3dp" />
 
         </RelativeLayout>
 
@@ -109,6 +109,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_video_outline_black"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Bottom bar where we send message, attach files etc. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_attachment_black"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_outline_black"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_microphone_outline_black"
             android:background="@color/white"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
